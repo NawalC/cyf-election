@@ -5,7 +5,14 @@
 /**
  * 1 - Convert candidates object to array
  */
+
+
+
+
 function candidatesObjToArray(candidates) {
+    return Object.keys(candidates).map(function (candidateID) {
+        return candidates[candidateID];
+    });
 
 }
 
